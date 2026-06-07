@@ -1,0 +1,38 @@
+[
+  {
+    "id": "q1",
+    "question": "Who owns the Payments API?",
+    "expected_category": "retrieval_needed",
+    "notes": "Requires looking up a specific fact from the corpus."
+  },
+  {
+    "id": "q2",
+    "question": "What severity should we start with if payment authorization fails for more than 10 minutes?",
+    "expected_category": "retrieval_needed",
+    "notes": "Operational fact from the runbook."
+  },
+  {
+    "id": "q3",
+    "question": "Does this project need a graph database on Day 1?",
+    "expected_category": "retrieval_needed",
+    "notes": "Grounded by architecture notes in the corpus."
+  },
+  {
+    "id": "q4",
+    "question": "What is 12 multiplied by 8?",
+    "expected_category": "retrieval_not_needed",
+    "notes": "General reasoning; no corpus lookup needed."
+  },
+  {
+    "id": "q5",
+    "question": "Explain why explicit workflow boundaries matter for retrieval systems.",
+    "expected_category": "ambiguous",
+    "notes": "Can be answered generally, but corpus also contains a project-specific note."
+  },
+  {
+    "id": "q6",
+    "question": "Which downstream dependency requires an idempotency key on all write requests?",
+    "expected_category": "retrieval_needed",
+    "notes": "Specific architecture fact from the corpus."
+  }
+]

@@ -1,0 +1,34 @@
+[project]
+name = "agentic-learning-retrieval"
+version = "0.1.0"
+description = "Practice project for controlled, observable, and evaluable agentic systems with RAG."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=0.3",
+    "langchain-anthropic>=1.1",
+    "langgraph>=0.2",
+    "langsmith>=0.2",
+    "python-dotenv>=1.0",
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.5",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.ruff.lint]
+# Ensure F401 (unused imports) and I (isort) are explicitly activated
+select = ["F401", "I"]
+
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
