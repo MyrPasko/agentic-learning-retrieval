@@ -16,9 +16,14 @@ The retrieval backend is intentionally simple. The point is to make the workflow
 
 ## Project Structure
 
-- `src/agentic_learning_retrieval/`
-  - `main.py` - runnable bootstrap-to-retrieval workflow slice
-  - `helpers/path_helpers.py` - repo-local paths for questions and corpus files
+- `src/agentic_learning_retrieval/models.py` - shared typed data contracts
+- `src/agentic_learning_retrieval/paths.py` - repo-local filesystem paths
+- `src/agentic_learning_retrieval/loaders.py` - question and corpus loading
+- `src/agentic_learning_retrieval/classification.py` - bootstrap question classification rules
+- `src/agentic_learning_retrieval/retrieval.py` - retrieval decision, query building, tokenization, and lexical corpus matching
+- `src/agentic_learning_retrieval/workflow.py` - bootstrap-to-retrieval workflow orchestration
+- `src/agentic_learning_retrieval/cli.py` - command-line output surface
+- `src/agentic_learning_retrieval/main.py` - thin compatibility entrypoint for `python -m`
 - `data/corpus/` - small technical document corpus
 - `data/questions/questions_v1.json` - first question fixtures
 - `tests/` - deterministic checks for arithmetic skip and corpus-backed retrieval

@@ -1,9 +1,5 @@
-from pathlib import Path
-
-
-def get_questions_path():
-    return Path(__file__).resolve().parents[3] / "data/questions/questions_v1.json"
+from agentic_learning_retrieval.paths import get_corpus_path, get_questions_path
 
 
 def get_corpuses_path():
-    return Path(__file__).resolve().parents[3] / "data/corpus"
+    return get_corpus_path()
