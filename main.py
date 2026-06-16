@@ -1,6 +1,5 @@
 
-def main():
-    print("Hello, World!")
+from agentic_learning_retrieval.cli import main
 
 if __name__ == "__main__":
     main()

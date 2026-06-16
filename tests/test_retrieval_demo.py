@@ -1,9 +1,9 @@
 import unittest
 
-from agentic_learning_retrieval.main import (
-    QuestionFixture,
+from agentic_learning_retrieval.classification import classify_question
+from agentic_learning_retrieval.models import QuestionFixture
+from agentic_learning_retrieval.retrieval import (
     build_retrieval_query,
-    classify_question,
     decide_retrieval,
     retrieve_documents,
 )
